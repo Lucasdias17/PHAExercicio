@@ -3,15 +3,13 @@ Documentation        O Package.robot será o nosso gerenciador de dependencias d
 ...                  Sendo assim, precisamos apenas instanciar esse package.
 
 Library              SeleniumLibrary
-Library              DebugLibrary
-Library              FakerLibrary        locale=pt_BR
 
-Resource             ../keywords/kws_login.robot
-Resource             ../keywords/kws_cadastro.robot
-Resource             ../keywords/kws_busca.robot
 
-Resource             ../pages/cadastro_page.robot
-Resource             ../pages/home_page.robot
-Resource             ../pages/login_page.robot
+Resource             ../keywords/kws_exercicios1.robot
+Resource             ../keywords/kws_exercicios2.robot
+Resource             ../keywords/kws_exercicios3.robot
+Resource             ../keywords/kws_exercicios4.robot
+Resource             ../keywords/kws_exercicios5.robot
 
-Resource             hooks.robot
+Resource             ../pages/exercicios.robot
+

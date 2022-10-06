@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221005 22:44:00.321" rpa="false" schemaversion="3">
+<suite id="s1" name="Exercicios" source="c:\Users\lucas.vdias\Documents\phaexercicio\tests\features\exercicios.robot">
+<test id="s1-t1" name="Cenario 5 - Atividade extra:" line="24">
+<kw name="verificar o tratamento" library="kws_exercicios5">
+<for flavor="IN">
+<var>${element}</var>
+<value>@{LISTA}</value>
+<iter>
+<var name="${element}">A</var>
+<try>
+<branch type="TRY">
+<kw name="Log" library="BuiltIn">
+<arg>message</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221005 22:44:00.497" level="INFO">message</msg>
+<status status="PASS" starttime="20221005 22:44:00.497" endtime="20221005 22:44:00.498"/>
+</kw>
+<if>
+<branch type="IF" condition="${element} &gt; 0">
+<kw name="@{LISTA NUM} = ${element}">
+<status status="NOT RUN" starttime="20221005 22:44:00.501" endtime="20221005 22:44:00.501"/>
+</kw>
+<msg timestamp="20221005 22:44:00.502" level="FAIL">Evaluating IF condition failed: Evaluating expression 'A &gt; 0' failed: NameError: name 'A' is not defined nor importable as module</msg>
+<status status="FAIL" starttime="20221005 22:44:00.499" endtime="20221005 22:44:00.502"/>
+</branch>
+<status status="FAIL" starttime="20221005 22:44:00.498" endtime="20221005 22:44:00.502"/>
+</if>
+<status status="FAIL" starttime="20221005 22:44:00.497" endtime="20221005 22:44:00.502"/>
+</branch>
+<status status="FAIL" starttime="20221005 22:44:00.497" endtime="20221005 22:44:00.502"/>
+</try>
+<status status="FAIL" starttime="20221005 22:44:00.497" endtime="20221005 22:44:00.502"/>
+</iter>
+<status status="FAIL" starttime="20221005 22:44:00.496" endtime="20221005 22:44:00.502"/>
+</for>
+<status status="FAIL" starttime="20221005 22:44:00.496" endtime="20221005 22:44:00.502"/>
+</kw>
+<status status="FAIL" starttime="20221005 22:44:00.494" endtime="20221005 22:44:00.503">Evaluating IF condition failed: Evaluating expression 'A &gt; 0' failed: NameError: name 'A' is not defined nor importable as module</status>
+</test>
+<doc>Aqui neste arquivo estaram presentes todos os tipos de
+variáveis que iremos estudar ao longo do treinamento.</doc>
+<status status="FAIL" starttime="20221005 22:44:00.325" endtime="20221005 22:44:00.504"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Exercicios">Exercicios</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221005 22:44:00.521" level="ERROR">Calling method 'end_suite' of listener 'robotframework_debug_adapter.listeners.DebugListener' failed: IndexError: pop from an empty deque</msg>
+</errors>
+</robot>
